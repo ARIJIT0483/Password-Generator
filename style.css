@@ -150,7 +150,7 @@ output {
     border: 3px solid #071f06 !important;
     background-color: #e8fccf;
     width: 80%;
-    height: 6vh;
+    height: 40px;
     text-align: center;
     display: inline;
     border: none;
@@ -164,7 +164,7 @@ output {
     display: inline;
     border: 3px solid #134611 !important;
     background-color: #e8fccf;
-    height: 6vh;
+    height: 40px;
     outline: none;
     padding: 0px 15px;
     cursor: pointer;
