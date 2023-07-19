@@ -289,3 +289,8 @@ form{
         background-color: #96e072;
     }
   }
+@media (orientation: landscape) {
+    #show-password, .copy-btn{
+        height: 40px;
+    }
+  }
