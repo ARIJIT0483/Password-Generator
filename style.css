@@ -264,8 +264,8 @@ form{
   
   @media screen and (max-width:1480px){
      h1{
-        font-size: 17px !important;
-        margin: 10vh 10vw;
+        font-size: 19.5px !important;
+        margin: 10vh 5vw;
      }
      .conditions, #generate-btn, form{
         /* width: 280px; */
@@ -276,7 +276,7 @@ form{
      font-weight: 700;
      }
      .password-generator{
-        margin: -5vh 10vw;
+        margin: -5vh 5vw;
      }
      input[type="range"]{
         position: relative;
