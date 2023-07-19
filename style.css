@@ -1,0 +1,291 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Righteous', cursive;
+}
+body{
+    background-image: linear-gradient(to right, #3e8914, #96e072, #3e8914);
+}
+h1{
+    display: flex;
+    align-items: center;
+    font-size: 39px !important; 
+    justify-content: center;
+    position: relative;
+    padding: 5px 20px;
+    border: 5px solid #041b0f;
+    color: #e8fccf;
+    text-shadow: 0px 0px 2px white;
+    letter-spacing: 3px;
+    margin: 10vh 30vw;
+    background-color: #134611;
+}
+.password-generator{
+    padding: 5px;
+    margin: 10vh 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #134611;
+    background-color: #96e072;
+}
+form{
+    margin-top: 10px;
+    width: 91.7%;
+    border: 2px solid #134611;
+    background-color: #3da35d;
+}
+#limit{
+    position: relative;
+    right: -50px;
+    font-size: 25px;
+}
+input[type="range"]{
+    position: relative;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 2px solid #004b23 !important;
+    outline: none;
+    height: 10px;
+    width: 65% !important;
+    background-color: #96e072;
+    margin-left: 20px !important;
+} 
+input[type="range"]::-webkit-slider-runnable-track{
+-webkit-appearance: none;
+height: 10px;
+
+}
+input[type="range"]::-moz-range-track{
+-moz-appearance: none;
+height: 10px;
+}
+input[type="range"]::-ms-track{
+appearance: none;
+height: 10px;
+}
+input[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    height: 18px;
+    width: 18px;
+    background-color: #3da35d;
+    margin-top: -4px;
+    border: 3px solid #134611;
+    cursor: pointer;
+}
+input[type="range"]::-moz-range-thumb{
+    -webkit-appearance: none;
+    height: 18px;
+    width: 18px;
+    border-radius: 0px;
+    background-color: #3da35d;
+    margin-top: -4px;
+    border: 3px solid #134611;
+    cursor: pointer;
+}
+input[type="range"]::-ms-thumb{
+    -webkit-appearance: none;
+    height: 18px;
+    width: 18px;
+    background-color: #3da35d;
+    margin-top: -4px;
+    border: 3px solid #134611;
+    cursor: pointer;
+}
+input[type="range"]::-webkit-slider-thumb:hover{
+    box-shadow: 0px 0px 8px 5px #e8fccf;
+}
+input[type="range"]::-moz-range-thumb:hover{
+    box-shadow: 0px 0px 8px 5px #e8fccf;
+}
+#length{
+    color: #134611;
+    font-weight: 700;
+    margin-right: -25px;
+}
+#limit{
+    color: #134611;
+    font-weight: 700;
+}
+#slider{
+    width: 80%;
+    border: 1px solid black;
+    width: 230px;
+    margin-left: 10px;
+    
+}
+
+output {
+    margin-left: -20px;
+}
+#conditions{
+    margin-top: 15px;
+    background-color: #004b23;
+    width: 91.7%;
+}
+.conditions{
+    position: relative;
+    width: 100%;
+    background-color: #e8fccf;
+    border: 2px solid #004b23;
+    padding: 5px 5px;
+    font-weight: 900px;
+}
+.conditions label {
+    padding-left: 25px;
+    cursor: pointer;
+    letter-spacing: 1.5px;
+    
+}
+#top{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 10px;
+    border-radius: 10px;
+    width: 100%;
+}
+#show-password{
+    border: 3px solid #071f06 !important;
+    background-color: #e8fccf;
+    width: 80%;
+    height: 6vh;
+    text-align: center;
+    display: inline;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    user-select: none;
+    color: #041b0f;
+}
+.copy-btn{
+    border: none;
+    display: inline;
+    border: 3px solid #134611 !important;
+    background-color: #e8fccf;
+    height: 6vh;
+    outline: none;
+    padding: 0px 15px;
+    cursor: pointer;
+}
+.conditions input{
+    margin: 10px 0px; 
+   background-color: green;
+}
+
+label{
+    font-size: 22px;
+    margin-left: 30px;
+}
+#generate-btn{
+    margin-top: 5%;
+    width: 91.7%;
+    border: none;
+    padding: 10px 0px;
+    font-size: 25px !important;
+    font-weight: 700;
+    background-color: #3da35d;
+    border: 3px solid #134611;
+    cursor: pointer;
+    color: rgb(1, 39, 1);
+    font-size: 20px;
+}
+#generate-btn:hover{
+    color: #e8fccf;
+    text-shadow: 0px 0px 20px #e8fccf;
+}
+input[type="checkbox"]{
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    height: 16px;
+    width: 16px;
+    background-color: white;
+    position: absolute;
+    bottom: -3px;
+    border: 2px solid #004b23;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    font-size: 21px;
+    margin-left: 15px;
+}
+input[type="checkbox"]::after{
+    content: "\f14a";
+    font-family: "Font Awesome 5 Free";
+    color: white;
+    display: none;
+}
+input[type="checkbox"]:hover{
+    background-color: #3da35d;
+}
+input[type="checkbox"]:checked{
+    background-color: rgb(1, 45, 1);
+}
+input[type="checkbox"]:checked:after{
+    display: block;
+}
+form{
+    position: relative;
+}
+#copied{
+    background-color: #3da35d;
+    color: white;
+    padding: 2px 4px;
+    border-radius: 5px;
+    display: inline-block;
+    position: absolute;
+    margin-top: -25px;
+    display: none;
+    transition: 2s;
+    border: none !important;
+    height: 24px;
+    text-align: center;
+}
+::selection {
+    color: black;
+    background: transparent;
+  }
+  .copyStyle{
+    display: inline-block;
+    /* display: block; */
+    transition: 2s;
+    background-color: red;
+  }
+  .backChange{
+    /* background-color: rgb(245, 245, 40); */
+  }
+  .copyAndcopied{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  @media screen and (max-width:1480px){
+     h1{
+        font-size: 17px !important;
+        margin: 10vh 10vw;
+     }
+     .conditions, #generate-btn, form{
+        /* width: 280px; */
+     }
+     .conditions label{
+     font-size: 16px !important;
+     padding-left: 5px !important;
+     font-weight: 700;
+     }
+     .password-generator{
+        margin: -5vh 10vw;
+     }
+     input[type="range"]{
+        position: relative;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        outline: none;
+        border: 2px solid #134611;
+        width: 320px;
+        height: 10px;
+        background-color: #96e072;
+    }
+  }

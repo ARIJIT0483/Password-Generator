@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator | CodingArijit</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@200&family=Lobster&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="manifest" href="/site.webmanifest" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <h1>PASSWORD GENERATOR</h1>
+    <div class="password-generator">
+      <div id="top">
+        
+        <input
+          type="text"
+          id="show-password"
+          placeholder="PASSWORD"
+          readonly
+        />
+        <div class="copyAndcopied">
+          <div class="copy-btn" id="copied">copied</div>
+        <button type="submit" onclick="myFunction()" class="copy-btn">
+          <i class="fa-solid fa-copy" style="color: #134611; font-size: 20px"></i>
+        </button>
+        </div>
+      </div>
+
+      <!-- <input type="text" name="" id="range-input" placeholder="Range" /> -->
+      <form oninput="result.value = slider.value">
+        <label for="" id="length">Length : </label
+        >
+        <input type="range" id="slider" min="1" max="20" step="1" value="10" />
+
+        <output name="result" for="slider" id="limit">10</output>
+      </form>
+      <div id="conditions">
+        <div class="conditions" id="capital-checked">
+          <input
+            type="checkbox"
+            id="capital-letter"
+            value="capital-letter"
+          /><label for="capital-letter">Include UPPER Case</label>
+        </div>
+        <div class="conditions" id="small-checked">
+          <input type="checkbox" id="small-letter" value="small-letter" /><label
+            for="small-letter"
+            >Include lower Case</label
+          >
+        </div>
+        <div class="conditions" id="special-checked">
+          <input
+            type="checkbox"
+            id="special-letter"
+            value="special-letter"
+          /><label for="special-letter">Include Symbol</label>
+        </div>
+        <div class="conditions" id="number-checked">
+          <input type="checkbox" id="number" value="number" /><label
+            for="number"
+            >Include Number</label
+          >
+        </div>
+      </div>
+      <button type="submit" id="generate-btn" onclick="generatePasswords()">
+        Generate
+      </button>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/1f724f9433.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
